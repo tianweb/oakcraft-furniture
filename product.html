@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk — OakCraft Furniture</title>
+    <meta name="description" content="Detail produk furniture premium OakCraft. Lihat spesifikasi, material, dan ulasan pelanggan.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">&#9670;</span>
+                <span class="logo-text">OakCraft</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Beranda</a></li>
+                <li><a href="catalog.html" class="nav-link active">Katalog</a></li>
+                <li><a href="about.html" class="nav-link">Tentang</a></li>
+                <li><a href="contact.html" class="nav-link">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumb-wrapper">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="catalog.html">Katalog</a></li>
+                    <li><a href="catalog.html?category=living" id="breadcrumbCategory">Ruang Tamu</a></li>
+                    <li aria-current="page" id="breadcrumbProduct">Sofa Chesterfield</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <section class="section section-product-detail">
+        <div class="container">
+            <div class="product-detail-grid">
+                <div class="product-gallery">
+                    <div class="gallery-main">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=80" alt="Sofa Chesterfield OakCraft" id="mainImage">
+                        <button class="gallery-zoom" aria-label="Perbesar gambar">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
+                    </div>
+                    <div class="gallery-thumbs">
+                        <button class="thumb active" data-image="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=80">
+                            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=150&q=80" alt="Tampilan depan">
+                        </button>
+                        <button class="thumb" data-image="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=900&q=80">
+                            <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=150&q=80" alt="Tampilan samping">
+                        </button>
+                        <button class="thumb" data-image="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=900&q=80">
+                            <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=150&q=80" alt="Tampilan detail">
+                        </button>
+                        <button class="thumb" data-image="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=900&q=80">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=150&q=80" alt="Tampilan ruangan">
+                        </button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="product-category" id="productCategory">Ruang Tamu</span>
+                    <h1 class="product-title" id="productTitle">Sofa Chesterfield 3-Seater</h1>
+                    <div class="product-rating">
+                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <span class="rating-count">4.9 (128 ulasan)</span>
+                    </div>
+                    <p class="product-price" id="productPrice">Rp18.500.000</p>
+                    <p class="product-short-desc" id="productShortDesc">Sofa klasik dengan sentuhan modern yang terbuat dari kayu oak solid dan dilapisi kain beludru premium. Desain tufting manual dan sandaran tangan yang melengkung memberikan kesan mewah yang timeless.</p>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Warna Upholstery</label>
+                            <div class="color-options">
+                                <button class="color-option active" style="background-color: #2c1810;" data-color="Coklat Tua" aria-label="Coklat Tua"></button>
+                                <button class="color-option" style="background-color: #8B7355;" data-color="Oak Natural" aria-label="Oak Natural"></button>
+                                <button class="color-option" style="background-color: #4a4a4a;" data-color="Abu-abu" aria-label="Abu-abu"></button>
+                                <button class="color-option" style="background-color: #1a1a2e;" data-color="Navy" aria-label="Navy"></button>
+                            </div>
+                            <span class="selected-color" id="selectedColor">Coklat Tua</span>
+                        </div>
+                        <div class="option-group">
+                            <label>Jumlah</label>
+                            <div class="quantity-selector">
+                                <button class="qty-btn" id="qtyMinus">&minus;</button>
+                                <input type="number" value="1" min="1" max="10" id="qtyInput" readonly>
+                                <button class="qty-btn" id="qtyPlus">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary btn-large" id="btnInquiry">Kirim Permintaan Info</button>
+                        <button class="btn btn-wishlist" id="btnWishlist" aria-label="Tambah ke wishlist">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </button>
+                    </div>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                            <span>Gratis Pengiriman</span>
+                        </div>
+                        <div class="meta-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            <span>Garansi 10 Tahun</span>
+                        </div>
+                        <div class="meta-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                            <span>Stok Tersedia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-tabs">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-tab="description">Deskripsi</button>
+                    <button class="tab-btn" data-tab="specs">Spesifikasi</button>
+                    <button class="tab-btn" data-tab="reviews">Ulasan (128)</button>
+                    <button class="tab-btn" data-tab="shipping">Pengiriman</button>
+                </div>
+                <div class="tabs-content">
+                    <div class="tab-panel active" id="tab-description">
+                        <div class="tab-description-content">
+                            <div class="desc-text">
+                                <h3>Tentang Produk Ini</h3>
+                                <p>Sofa Chesterfield kami adalah perpaduan sempurna antara tradisi dan modernitas. Setiap sofa dibuat dengan tangan oleh pengrajin berpengalaman yang telah menguasai teknik tufting manual selama lebih dari 20 tahun.</p>
+                                <p>Rangka kayu oak solid memberikan kekuatan struktural yang tak tertandingi, sementara lapisan kain beludru premium memberikan sentuhan lembut dan kemewahan. Desain sandaran tangan yang melengkung dan paku dekoratif kuningan menambah karakter klasik yang abadi.</p>
+                                <p>Sofa ini dirancang untuk menjadi pusat perhatian ruang tamu Anda &mdash; sebuah pernyataan gaya yang juga menawarkan kenyamanan maksimal untuk bersantai bersama keluarga.</p>
+                                <h4>Fitur Utama</h4>
+                                <ul>
+                                    <li>Rangka kayu oak solid 100%</li>
+                                    <li>Upholstery beludru premium dengan perlindungan stain</li>
+                                    <li>Tufting manual dengan detail paku kuningan</li>
+                                    <li>Sandaran tangan melengkung dengan profil klasik</li>
+                                    <li>Kaki kayu solid dengan finishing natural</li>
+                                    <li>Dukungan lumbar yang ergonomis</li>
+                                </ul>
+                            </div>
+                            <div class="desc-image">
+                                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&q=80" alt="Detail kerajinan sofa">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="tab-specs">
+                        <div class="specs-table">
+                            <div class="spec-row"><span class="spec-label">Dimensi (P x L x T)</span><span class="spec-value">220 cm x 95 cm x 78 cm</span></div>
+                            <div class="spec-row"><span class="spec-label">Berat</span><span class="spec-value">65 kg</span></div>
+                            <div class="spec-row"><span class="spec-label">Material Rangka</span><span class="spec-value">Kayu Oak Solid</span></div>
+                            <div class="spec-row"><span class="spec-label">Material Upholstery</span><span class="spec-value">Kain Beludru Premium (100% Polyester)</span></div>
+                            <div class="spec-row"><span class="spec-label">Kepadatan Busa</span><span class="spec-value">High-Density Foam (35 kg/m&sup3;)</span></div>
+                            <div class="spec-row"><span class="spec-label">Kapasitas Duduk</span><span class="spec-value">3 Orang</span></div>
+                            <div class="spec-row"><span class="spec-label">Tinggi Duduk</span><span class="spec-value">45 cm</span></div>
+                            <div class="spec-row"><span class="spec-label">Kedalaman Duduk</span><span class="spec-value">58 cm</span></div>
+                            <div class="spec-row"><span class="spec-label">Garansi</span><span class="spec-value">10 Tahun (Rangka), 3 Tahun (Upholstery)</span></div>
+                            <div class="spec-row"><span class="spec-label">Negara Asal</span><span class="spec-value">Indonesia</span></div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="tab-reviews">
+                        <div class="reviews-summary">
+                            <div class="reviews-rating">
+                                <span class="rating-big">4.9</span>
+                                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                <span>Berdasarkan 128 ulasan</span>
+                            </div>
+                            <div class="reviews-bars">
+                                <div class="review-bar"><span>5 bintang</span><div class="bar"><div class="bar-fill" style="width: 92%"></div></div><span>118</span></div>
+                                <div class="review-bar"><span>4 bintang</span><div class="bar"><div class="bar-fill" style="width: 6%"></div></div><span>8</span></div>
+                                <div class="review-bar"><span>3 bintang</span><div class="bar"><div class="bar-fill" style="width: 2%"></div></div><span>2</span></div>
+                                <div class="review-bar"><span>2 bintang</span><div class="bar"><div class="bar-fill" style="width: 0%"></div></div><span>0</span></div>
+                                <div class="review-bar"><span>1 bintang</span><div class="bar"><div class="bar-fill" style="width: 0%"></div></div><span>0</span></div>
+                            </div>
+                        </div>
+                        <div class="reviews-list">
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Diana Putri">
+                                    <div><h4>Diana Putri</h4><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div>
+                                    <span class="review-date">2 minggu lalu</span>
+                                </div>
+                                <p class="review-text">"Sofa ini benar-benar melebihi ekspektasi saya. Kualitas kayu solidnya terasa begitu nyata dan upholstery beludrunya sangat lembut. Tim pengiriman juga sangat profesional."</p>
+                            </div>
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Andi Wijaya">
+                                    <div><h4>Andi Wijaya</h4><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div>
+                                    <span class="review-date">1 bulan lalu</span>
+                                </div>
+                                <p class="review-text">"Investasi terbaik untuk rumah kami. Setelah 6 bulan pemakaian, sofa masih terlihat seperti baru. Sangat direkomendasikan!"</p>
+                            </div>
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Rina Susanti">
+                                    <div><h4>Rina Susanti</h4><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div></div>
+                                    <span class="review-date">2 bulan lalu</span>
+                                </div>
+                                <p class="review-text">"Desainnya sangat elegan dan kualitasnya bagus. Waktu pengiriman sedikit lebih lama dari perkiraan, tapi hasilnya sepadan."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="tab-shipping">
+                        <div class="shipping-content">
+                            <h3>Informasi Pengiriman</h3>
+                            <p>Kami bekerja sama dengan jasa pengiriman terpercaya untuk memastikan furniture Anda tiba dengan aman dan tepat waktu.</p>
+                            <div class="shipping-options">
+                                <div class="shipping-option">
+                                    <h4>&#128666; Pengiriman Standar</h4>
+                                    <p>Estimasi 7-14 hari kerja</p>
+                                    <p class="shipping-price">Gratis untuk pembelian di atas Rp5.000.000</p>
+                                </div>
+                                <div class="shipping-option">
+                                    <h4>&#9889; Pengiriman Express</h4>
+                                    <p>Estimasi 3-5 hari kerja</p>
+                                    <p class="shipping-price">Rp500.000 - Rp1.500.000 (tergantung lokasi)</p>
+                                </div>
+                                <div class="shipping-option">
+                                    <h4>&#127968; Pengiriman &amp; Pemasangan</h4>
+                                    <p>Termasuk pemasangan oleh tim profesional kami</p>
+                                    <p class="shipping-price">Rp750.000 (Jabodetabek)</p>
+                                </div>
+                            </div>
+                            <h4>Area Pengiriman</h4>
+                            <p>Kami mengirim ke seluruh Indonesia. Untuk area luar Jawa, waktu pengiriman mungkin lebih lama. Hubungi tim kami untuk informasi lebih lanjut.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="related-products">
+                <div class="section-header">
+                    <h3 class="section-title">Anda Mungkin Juga Suka</h3>
+                </div>
+                <div class="products-grid" id="relatedProducts"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo"><span class="logo-icon">&#9670;</span><span class="logo-text">OakCraft</span></a>
+                    <p>Furniture premium berkualitas tinggi untuk kehidupan yang lebih baik.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
+                        <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                        <a href="#" aria-label="Pinterest"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Telusuri</h4>
+                    <ul>
+                        <li><a href="catalog.html">Semua Produk</a></li>
+                        <li><a href="catalog.html?category=living">Ruang Tamu</a></li>
+                        <li><a href="catalog.html?category=bedroom">Kamar Tidur</a></li>
+                        <li><a href="catalog.html?category=dining">Ruang Makan</a></li>
+                        <li><a href="catalog.html?category=office">Ruang Kerja</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Perusahaan</h4>
+                    <ul>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="about.html#craftsmanship">Kerajinan</a></li>
+                        <li><a href="about.html#sustainability">Keberlanjutan</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Bantuan</h4>
+                    <ul>
+                        <li><a href="contact.html">Layanan Pelanggan</a></li>
+                        <li><a href="#">Pengiriman &amp; Pengembalian</a></li>
+                        <li><a href="#">Panduan Perawatan</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 OakCraft Furniture. Hak Cipta Dilindungi.</p>
+                <div class="footer-legal">
+                    <a href="#">Kebijakan Privasi</a>
+                    <a href="#">Syarat &amp; Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
