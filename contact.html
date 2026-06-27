@@ -17,67 +17,145 @@
             min-height: 100vh;
         }
         
+        /* Header */
+        .header {
+            background: #5c4033;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        .header h1 {
+            font-size: 1.8em;
+            margin-bottom: 5px;
+        }
+        
+        .header p {
+            font-size: 0.95em;
+            opacity: 0.9;
+        }
+        
+        /* Navigation */
+        .nav {
+            background: #4a332a;
+            padding: 12px 0;
+            text-align: center;
+        }
+        
+        .nav a {
+            color: #f5f0e8;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 0.95em;
+            transition: color 0.3s;
+        }
+        
+        .nav a:hover {
+            color: #d4a574;
+        }
+        
+        /* Container */
         .container {
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 40px 20px;
         }
         
-        h1 {
+        /* Contact Section */
+        .contact-section {
             text-align: center;
-            color: #5c4033;
-            margin-bottom: 10px;
-            font-size: 2.2em;
-        }
-        
-        .subtitle {
-            text-align: center;
-            color: #8b7355;
             margin-bottom: 30px;
-            font-size: 1.1em;
         }
         
+        .contact-section h2 {
+            color: #5c4033;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .contact-section p {
+            color: #8b7355;
+            font-size: 1.05em;
+        }
+        
+        /* Form Wrapper - Custom Styling */
         .form-wrapper {
             background: white;
             border-radius: 15px;
-            padding: 25px;
-            box-shadow: 0 8px 25px rgba(92, 64, 51, 0.15);
+            padding: 30px;
+            box-shadow: 0 8px 30px rgba(92, 64, 51, 0.12);
+            border: 1px solid #e8dfd0;
         }
         
-        iframe {
+        /* Sembunyikan elemen Google Forms yang tidak perlu */
+        .form-wrapper iframe {
             width: 100%;
             border: none;
-            min-height: 1600px;
+            min-height: 1550px;
         }
         
-        .back-link {
-            display: block;
+        /* Footer */
+        .footer {
+            background: #5c4033;
+            color: white;
             text-align: center;
-            margin-top: 30px;
-            color: #5c4033;
-            text-decoration: none;
-            font-weight: 500;
+            padding: 20px;
+            margin-top: 40px;
         }
         
-        .back-link:hover {
-            text-decoration: underline;
+        .footer p {
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+        
+        /* Responsive */
+        @media (max-width: 600px) {
+            .nav a {
+                margin: 0 10px;
+                font-size: 0.85em;
+            }
+            
+            .contact-section h2 {
+                font-size: 1.6em;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Header -->
+    <div class="header">
+        <h1>🪑 OakCraft Furniture</h1>
+        <p>Furniture Berkualitas untuk Rumah Anda</p>
+    </div>
+    
+    <!-- Navigation -->
+    <div class="nav">
+        <a href="index.html">Beranda</a>
+        <a href="catalog.html">Katalog</a>
+        <a href="about.html">Tentang Kami</a>
+        <a href="contact.html">Hubungi Kami</a>
+    </div>
+    
+    <!-- Main Content -->
     <div class="container">
-        <h1>📧 Hubungi Kami</h1>
-        <p class="subtitle">Isi form di bawah ini, kami akan segera menghubungi Anda.</p>
+        <div class="contact-section">
+            <h2>📧 Hubungi Kami</h2>
+            <p>Isi form di bawah ini, kami akan segera merespons pesan Anda.</p>
+        </div>
         
         <div class="form-wrapper">
             <iframe 
                 src="https://docs.google.com/forms/d/e/1FAIpQLSfOIYQj9VLY6Fx80KwLMoWJRXemPR2BKpH6IU8cx_ibUxLwXg/viewform?embedded=true" 
-                height="1607">
+                height="1550">
                 Memuat…
             </iframe>
         </div>
-        
-        <a href="index.html" class="back-link">← Kembali ke Beranda</a>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2026 OakCraft Furniture. Semua hak dilindungi.</p>
     </div>
 </body>
 </html>
