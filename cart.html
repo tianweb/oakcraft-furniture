@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja - OakCraft Furniture</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Supabase JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🌳</span>
+                <span class="logo-text">OakCraft</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="catalog.html">Katalog</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="cart.html" class="nav-icon active">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Section -->
+    <section class="cart-section" style="padding: 120px 0 60px;">
+        <div class="container">
+            <h1 class="section-title">Keranjang Belanja</h1>
+            
+            <div class="cart-container" style="display: grid; grid-template-columns: 1fr 350px; gap: 40px; margin-top: 40px;">
+                <div class="cart-items" style="background: white; border-radius: 16px; padding: 30px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+                    <!-- Items akan di-render oleh JavaScript -->
+                    <div class="cart-empty" style="text-align: center; padding: 60px 20px;">
+                        <i class="fas fa-shopping-basket" style="font-size: 3rem; margin-bottom: 20px; color: #ddd;"></i>
+                        <p>Keranjang belanja Anda kosong</p>
+                        <a href="catalog.html" class="btn-primary" style="margin-top: 20px; display: inline-block;">Lanjutkan Belanja</a>
+                    </div>
+                </div>
+                
+                <div class="cart-summary" style="background: white; border-radius: 16px; padding: 30px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); height: fit-content;">
+                    <h3 style="margin-bottom: 20px; font-family: 'Playfair Display', serif;">Ringkasan Pesanan</h3>
+                    
+                    <div class="summary-row" style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee;">
+                        <span>Subtotal</span>
+                        <span class="cart-subtotal" style="font-weight: 600;">Rp 0</span>
+                    </div>
+                    
+                    <div class="summary-row" style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee;">
+                        <span>Pengiriman</span>
+                        <span style="color: #27ae60;">Gratis</span>
+                    </div>
+                    
+                    <div class="summary-row total" style="display: flex; justify-content: space-between; padding: 15px 0; font-size: 1.2rem; font-weight: 700;">
+                        <span>Total</span>
+                        <span class="cart-total">Rp 0</span>
+                    </div>
+                    
+                    <div class="customer-form" style="margin-top: 25px;">
+                        <h4 style="margin-bottom: 15px;">Data Pembeli</h4>
+                        <input type="text" id="customer-name" placeholder="Nama Lengkap" required 
+                            style="width: 100%; padding: 12px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 8px;">
+                        <input type="email" id="customer-email" placeholder="Email" required 
+                            style="width: 100%; padding: 12px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 8px;">
+                        <input type="tel" id="customer-phone" placeholder="Nomor Telepon" value="0895412670908" 
+                            style="width: 100%; padding: 12px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 8px;">
+                        <textarea id="customer-address" placeholder="Alamat Pengiriman" rows="3" required 
+                            style="width: 100%; padding: 12px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 8px; resize: vertical;"></textarea>
+                    </div>
+                    
+                    <button class="btn-checkout" onclick="checkoutWithQRIS()" 
+                        style="width: 100%; padding: 15px; background: #8B6F47; color: white; border: none; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; margin-top: 20px; transition: all 0.3s;">
+                        <i class="fas fa-qrcode"></i> Bayar dengan QRIS
+                    </button>
+                    
+                    <p style="text-align: center; margin-top: 15px; font-size: 0.85rem; color: #666;">
+                        <i class="fas fa-shield-alt"></i> Pembayaran aman dengan QRIS
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">🌳</span>
+                        <span class="logo-text">OakCraft</span>
+                    </a>
+                    <p>Furniture premium berkualitas tinggi untuk setiap ruang.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Tautan Cepat</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="catalog.html">Katalog</a></li>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Hubungi Kami</h4>
+                    <p><i class="fas fa-phone"></i> <a href="https://wa.me/62895412670908">+62 895 4126 70908</a></p>
+                    <p><i class="fas fa-envelope"></i> info@oakcraft.id</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Jakarta Selatan</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p> OakCraft Furniture. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="supabase-config.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            renderCart();
+        });
+    </script>
+</body>
+</html>
