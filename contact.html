@@ -3,276 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontak Kami — OakCraft Furniture</title>
-    <meta name="description" content="Hubungi OakCraft Furniture. Kami siap membantu Anda dengan pertanyaan, konsultasi desain, dan informasi produk.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Hubungi Kami - OakCraft Furniture</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f0e8;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #5c4033;
+            margin-bottom: 10px;
+            font-size: 2.2em;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #8b7355;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        
+        .form-wrapper {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 8px 25px rgba(92, 64, 51, 0.15);
+        }
+        
+        iframe {
+            width: 100%;
+            border: none;
+            min-height: 1600px;
+        }
+        
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            color: #5c4033;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <span class="logo-icon">&#9670;</span>
-                <span class="logo-text">OakCraft</span>
-            </a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="nav-link">Beranda</a></li>
-                <li><a href="catalog.html" class="nav-link">Katalog</a></li>
-                <li><a href="about.html" class="nav-link">Tentang</a></li>
-                <li><a href="contact.html" class="nav-link active">Kontak</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <section class="page-header page-header-contact">
-        <div class="container">
-            <span class="page-label">Hubungi Kami</span>
-            <h1 class="page-title">Kami Siap Membantu Anda</h1>
-            <p class="page-desc">Punya pertanyaan tentang produk, konsultasi desain, atau kebutuhan kustom? Tim kami siap membantu.</p>
-        </div>
-    </section>
-
-    <section class="section section-contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-info-header">
-                        <span class="section-label">Informasi Kontak</span>
-                        <h2>Mari Berbicara</h2>
-                        <p>Ada banyak cara untuk menghubungi kami. Pilih yang paling nyaman bagi Anda.</p>
-                    </div>
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                            </div>
-                            <div class="contact-method-content">
-                                <h4>Telepon</h4>
-                                <p><a href="tel:+622129550123">+62 21 2955 0123</a></p>
-                                <span class="contact-note">Senin - Jumat, 08:00 - 17:00 WIB</span>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                            </div>
-                            <div class="contact-method-content">
-                                <h4>Email</h4>
-                                <p><a href="mailto:tianlur9@gmail.com">tianlur9@gmsil.com</a></p>
-                                <span class="contact-note">Respons dalam 24 jam</span>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                            </div>
-                            <div class="contact-method-content">
-                                <h4>Showroom</h4>
-                                <p>Jl. Kebayoran Baru No. 88<br>Jakarta Selatan, 12120</p>
-                                <span class="contact-note">Buka setiap hari, 10:00 - 20:00 WIB</span>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-                            </div>
-                            <div class="contact-method-content">
-                                <h4>WhatsApp</h4>
-                                <p><a href="https://wa.me/62895412670908">+62 895 4126 70908</a></p>
-                                <span class="contact-note">Respons cepat untuk pertanyaan umum</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-social">
-                        <h4>Ikuti Kami</h4>
-                        <div class="footer-social">
-                            <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
-                            <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-                            <a href="#" aria-label="Pinterest"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form-wrapper">
-                    <div class="contact-form-header">
-                        <h3>Kirim Pesan</h3>
-                        <p>Isi formulir di bawah ini dan tim kami akan menghubungi Anda secepatnya dan sekilat mungkin.</p>
-                    </div>
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="firstName">Nama Depan *</label>
-                                <input type="text" id="firstName" name="firstName" required placeholder="Nama depan Anda">
-                            </div>
-                            <div class="form-group">
-                                <label for="lastName">Nama Belakang *</label>
-                                <input type="text" id="lastName" name="lastName" required placeholder="Nama belakang Anda">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" required placeholder="email@anda.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Nomor Telepon</label>
-                            <input type="tel" id="phone" name="phone" placeholder="+62 895412670908">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subjek *</label>
-                            <select id="subject" name="subject" required>
-                                <option value="">Pilih subjek</option>
-                                <option value="inquiry">Pertanyaan Produk</option>
-                                <option value="consultation">Konsultasi Desain</option>
-                                <option value="custom">Pesanan Kustom</option>
-                                <option value="shipping">Pengiriman &amp; Pengiriman</option>
-                                <option value="warranty">Garansi &amp; Perbaikan</option>
-                                <option value="other">Lainnya</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Pesan *</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Ceritakan apa yang Anda butuhkan..."></textarea>
-                        </div>
-                        <div class="form-group form-checkbox">
-                            <label class="filter-option">
-                                <input type="checkbox" required>
-                                <span class="checkmark"></span>
-                                <span>Saya menyetujui <a href="#">Kebijakan Privasi</a> OakCraft</span>
-                            </label>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-large btn-full">Kirim Pesan</button>
-                    </form>
-                    <div class="contact-form-success" id="formSuccess" style="display: none;">
-                        <div class="success-icon">&#10003;</div>
-                        <h3>Pesan Terkirim!</h3>
-                        <p>Terima kasih telah menghubungi kami. Tim OakCraft akan merespons pesan Anda dalam waktu 24 jam.</p>
-                        <button class="btn btn-secondary" id="btnNewMessage">Kirim Pesan Lain</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section section-map">
-        <div class="map-container">
+    <div class="container">
+        <h1>📧 Hubungi Kami</h1>
+        <p class="subtitle">Isi form di bawah ini, kami akan segera menghubungi Anda.</p>
+        
+        <div class="form-wrapper">
             <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2!2d106.8!3d-6.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTInMDAuMCJTIDEwNsKwNDgnMDAuMCJF!5e0!3m2!1sid!2sid!4v1600000000000!5m2!1sid!2sid" 
-                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Lokasi Showroom OakCraft">
+                src="https://docs.google.com/forms/d/e/1FAIpQLSfOIYQj9VLY6Fx80KwLMoWJRXemPR2BKpH6IU8cx_ibUxLwXg/viewform?embedded=true" 
+                height="1607">
+                Memuat…
             </iframe>
         </div>
-    </section>
-
-    <section class="section section-faq bg-light">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">FAQ</span>
-                <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
-            </div>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        <span>Berapa lama waktu produksi untuk pesanan kustom?</span>
-                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Untuk pesanan kustom, waktu produksi biasanya berkisar antara 4-8 minggu tergantung kompleksitas desain dan ketersediaan material. Tim kami akan memberikan estimasi yang lebih akurat setelah konsultasi desain.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        <span>Apakah OakCraft menyediakan layanan pengiriman ke seluruh Indonesia?</span>
-                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Ya, kami mengirim ke seluruh Indonesia. Untuk area Jabodetabek, kami menawarkan layanan pengiriman dan pemasangan. Untuk area luar Jawa, waktu pengiriman mungkin lebih lama dan biaya tambahan mungkin berlaku.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        <span>Bagaimana cara merawat furniture kayu solid OakCraft?</span>
-                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Furniture kayu solid kami dirancang untuk tahan lama dengan perawatan minimal. Kami merekomendasikan membersihkan dengan kain microfiber kering secara rutin, menghindari paparan sinar matahari langsung, dan menggunakan coaster untuk melindungi permukaan dari cairan.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        <span>Apakah saya bisa mengunjungi showroom sebelum membeli?</span>
-                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Tentu! Kami sangat merekomendasikan mengunjungi showroom kami di Jl. Kebayoran Baru No. 88, Jakarta Selatan. Showroom kami buka setiap hari dari 10:00 - 20:00 WIB. Anda juga bisa membuat janji untuk konsultasi desain privat dengan tim kami.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        <span>Apakah ada garansi untuk produk OakCraft?</span>
-                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Ya, semua produk OakCraft dilindungi garansi 15 tahun untuk rangka kayu solid dan 3 tahun untuk upholstery. Garansi mencakup cacat produksi dan kerusakan struktural. Untuk detail lengkap, silakan hubungi tim layanan pelanggan kami.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="index.html" class="logo"><span class="logo-icon">&#9670;</span><span class="logo-text">OakCraft</span></a>
-                    <p>Furniture premium berkualitas tinggi untuk kehidupan yang lebih baik.</p>
-                    <div class="footer-social">
-                        <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
-                        <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-                        <a href="#" aria-label="Pinterest"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg></a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <h4>Telusuri</h4>
-                    <ul>
-                        <li><a href="catalog.html">Semua Produk</a></li>
-                        <li><a href="catalog.html?category=living">Ruang Tamu</a></li>
-                        <li><a href="catalog.html?category=bedroom">Kamar Tidur</a></li>
-                        <li><a href="catalog.html?category=dining">Ruang Makan</a></li>
-                        <li><a href="catalog.html?category=office">Ruang Kerja</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Perusahaan</h4>
-                    <ul>
-                        <li><a href="about.html">Tentang Kami</a></li>
-                        <li><a href="about.html#craftsmanship">Kerajinan</a></li>
-                        <li><a href="about.html#sustainability">Keberlanjutan</a></li>
-                        <li><a href="contact.html">Kontak</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Bantuan</h4>
-                    <ul>
-                        <li><a href="contact.html">Layanan Pelanggan</a></li>
-                        <li><a href="#">Pengiriman &amp; Pengembalian</a></li>
-                        <li><a href="#">Panduan Perawatan</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 OakCraft Furniture. Hak Cipta Dilindungi.</p>
-                <div class="footer-legal">
-                    <a href="#">Kebijakan Privasi</a>
-                    <a href="#">Syarat &amp; Ketentuan</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+        
+        <a href="index.html" class="back-link">← Kembali ke Beranda</a>
+    </div>
 </body>
 </html>
