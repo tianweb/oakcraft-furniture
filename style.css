@@ -972,3 +972,156 @@ input, textarea, select { font-family: inherit; font-size: inherit; }
     display: block;
 }
 
+/* ============================================
+   BACKGROUND & VISUAL UPGRADE
+   Tambahkan di paling bawah style.css
+   ============================================ */
+
+/* Body - lebih warm & tidak putih bersih */
+body {
+    background-color: #F5F0E8 !important;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C4A77D' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Hero - overlay lebih gelap untuk kontras teks */
+.hero-overlay {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.45) 0%,
+        rgba(0, 0, 0, 0.65) 50%,
+        rgba(0, 0, 0, 0.8) 100%
+    ) !important;
+}
+
+/* Section bg-light - lebih warm dan berkelas */
+.bg-light {
+    background: linear-gradient(180deg, #EDE8E0 0%, #F5F0E8 100%) !important;
+}
+
+/* Newsletter - lebih gelap dan dramatis */
+.section-newsletter {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2520 50%, #1a1a1a 100%) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-newsletter::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(ellipse at center, rgba(196, 167, 125, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+/* Footer - lebih gelap dan premium */
+.footer {
+    background: linear-gradient(180deg, #1a1a1a 0%, #111111 100%) !important;
+}
+
+/* Product card - tambah shadow dan border halus */
+.product-card {
+    border: 1px solid rgba(0, 0, 0, 0.06) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+}
+
+.product-card:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1) !important;
+    border-color: rgba(196, 167, 125, 0.3) !important;
+}
+
+/* Collection card - tambah depth */
+.collection-card {
+    border: 1px solid rgba(0, 0, 0, 0.06) !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06) !important;
+}
+
+.collection-card:hover {
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Testimonial card - lebih elegan */
+.testimonial-card {
+    border: 1px solid rgba(0, 0, 0, 0.04) !important;
+    background: linear-gradient(145deg, #FFFFFF 0%, #FAFAF8 100%) !important;
+}
+
+/* Breadcrumb - lebih subtle */
+.breadcrumb-wrapper {
+    background: linear-gradient(180deg, #FAFAF8 0%, #F5F0E8 100%) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Product detail background */
+.section-product-detail {
+    background: linear-gradient(180deg, #FAFAF8 0%, #F5F0E8 30%, #FAFAF8 100%) !important;
+}
+
+/* Specs table - lebih jelas */
+.spec-row {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Review card */
+.review-card {
+    background: linear-gradient(145deg, #F5F0E8 0%, #EDE8E0 100%) !important;
+    border: 1px solid rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Shipping option */
+.shipping-option {
+    background: linear-gradient(145deg, #F5F0E8 0%, #EDE8E0 100%) !important;
+    border: 1px solid rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Gallery */
+.gallery-main {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1) !important;
+    border: 1px solid rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Tab panel */
+.tab-panel {
+    background: transparent !important;
+}
+
+/* Page header - lebih dramatis */
+.page-header {
+    background: linear-gradient(180deg, #EDE8E0 0%, #F5F0E8 100%) !important;
+}
+
+/* Scrollbar lebih elegan */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #EDE8E0; }
+::-webkit-scrollbar-thumb { background: #C4A77D; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #8B7355; }
+
+/* Selection */
+::selection {
+    background: #8B7355 !important;
+    color: #FFFFFF !important;
+}
+
+/* WA Float - lebih menarik */
+.wa-float a {
+    animation: waFloat 3s ease-in-out infinite;
+}
+
+@keyframes waFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Fallback gambar yang broken */
+.product-card-image img,
+.gallery-main img,
+.thumb img,
+.collection-image img,
+.craftsmanship-image img,
+.desc-image img,
+.hero-image img {
+    background: linear-gradient(135deg, #EDE8E0 0%, #D1CCC4 100%) !important;
+    min-height: 200px;
+}
